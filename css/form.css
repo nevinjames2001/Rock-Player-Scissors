@@ -1,0 +1,60 @@
+/**Nevin James,000825144
+This is Assignment 2 of PHP AND JAVSCRIPT of Winter 2021 and it is created and submitted on 8th March 2021
+This is an Assignment is a practical demonstration on Javscript and its eventhandlers**/
+/**This is the css file of the form.html and it design the form.html**/
+* {
+    box-sizing: border-box;
+  }
+  
+
+  /**Styling the lable for the name and age textboxes**/
+  label {
+    padding: 12px 12px 12px 0;
+    display: inline-block;
+  }
+  /**Styling the submit button**/
+  input[type=submit] {
+    background-color: #4CAF50;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    float: right;
+  }
+  /**Designing the submit button when we hover it**/
+  input[type=submit]:hover {
+    background-color: #45a049;
+  }
+  
+  form {
+    border-radius: 5px;
+    background-color: #d60f0f;
+    padding: 20px;
+    
+  }
+  
+  .col-25 {
+    float: left;
+    width: 25%;
+   
+  }
+  
+ 
+  
+  
+
+  .row:after {
+    content: "";
+    display: table;
+    clear: both;
+   
+  }
+  
+ /**Designing the web page if it is less than 320px**/
+  @media screen and (max-width: 320px) {
+    .col-25,  input[type=submit] {
+      width: 100%;
+      margin-top: 0;
+    }
+  }

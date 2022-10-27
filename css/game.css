@@ -1,0 +1,275 @@
+/**Nevin James,000825144
+This is Assignment 2 of PHP AND JAVSCRIPT of Winter 2021 and it is created and submitted on 8th March 2021
+This is an Assignment is a practical demonstration on Javscript and its eventhandlers**/
+/**This is the css file of the game web page**/
+* {
+    box-sizing: border-box;
+	margin:0%;
+}
+/**This tells how the display should be when length is more than 321 px**/
+ @media screen and (min-width:321px) {   
+  /**This styles the main heading of the page**/
+  h1{
+    color:white;
+    padding-left:35%;
+    padding-top: 20px;
+    padding-bottom: 20px;
+  }
+  /**Give style for the header of the file and for different classes**/
+header{
+    
+    background-color: #000099;
+    
+}
+ .body{
+    
+    background-color: blue;
+	display:grid;
+	grid-template-columns:30% 40% 30%;
+	
+
+}
+	.body .head{
+	grid-column:1/4;
+	
+	}
+	.body .head h2{
+		color:white;
+    padding-left:40%;
+    padding-top: 20px;
+    padding-bottom: 20px;
+	}
+	.body .computer{
+		grid-column:1/2;
+		
+	}
+	.body .computer h3{
+		text-align:right;
+		padding-top:80px;
+		padding-bottom:80px;
+		color:white;
+		
+		
+	}
+	.body .computeroutput{
+		grid-column:2/3;
+		
+	}
+	.body .computeroutput .circle{
+		border-color: white;
+        border-image: none;
+        border-radius: 50% 50% 50% 50%;
+        border-style: dashed;
+        border-width: 2px;
+		margin-left:35%;
+		margin-top:10px;
+        height: 150px;
+        width: 150px;
+		overflow: hidden;
+		padding-top: 20px;
+		padding-left:20px;
+	}
+	.body .computerscore{
+		grid-column:3/4;
+		text-align:center;
+		color:white;
+		padding-top:80px;
+	}
+	.body .vsleft{
+		grid-column:1/2;
+		
+		
+		}
+	.body .vs{
+		grid-column:2/3;
+		
+		color:white;
+		text-align:center;
+		padding-top:10px;
+		padding-bottom:10px;
+	}
+	.body .vsright{
+		grid-column:3/4;
+		
+	}
+	.body .player{
+		grid-column:1/2;
+		
+	}
+	.body .player h3{
+		text-align:right;
+		padding-top:80px;
+		padding-bottom:80px;
+		color:white;
+	}
+	.body .playeroutput{
+		grid-column:2/3;
+		
+	}
+	.body .playeroutput .circle{
+		border-color: white;
+        border-image: none;
+        border-radius: 50% 50% 50% 50%;
+        border-style: dashed;
+        border-width: 2px;
+		margin-left:35%;
+		margin-top:10px;
+        height: 150px;
+        width: 150px;
+		overflow: hidden;
+		padding-top: 20px;
+		padding-left:20px;
+	}
+	.body .playerscore{
+		grid-column:3/4;
+		text-align:center;
+		color:white;
+		padding-top:80px;
+		
+	}
+	
+	
+footer{
+    display: flex;
+	justify-content: center;
+    background-color: #3333ff;
+	padding-top:20px;
+	padding-bottom:20px;
+}
+.selection:hover{
+	transform:scale(1.2);
+}
+}
+/**This tells how the display should be when length is less than 320 px**/
+@media screen and (max-width:320px) {
+	h1{
+    color:white;
+    padding-left:20%;
+    padding-top: 20px;
+    padding-bottom: 20px;
+  }
+header{
+    
+    background-color: #000099;
+    
+}
+ .body{
+    
+    background-color: blue;
+	display:grid;
+	grid-template-columns:30% 20% 20% 30%;
+	
+
+}
+	.body .head{
+	grid-column:1/5;
+	
+	}
+	.body .head h2{
+		color:white;
+    padding-left:30%;
+    padding-top: 20px;
+    padding-bottom: 20px;
+	}
+	.body .computer{
+		grid-column:1/5;
+		
+	}
+	.body .computer h3{
+		text-align:center;
+		padding-top:80px;
+		padding-bottom:80px;
+		color:white;
+		
+		
+	}
+	.body .computeroutput{
+		grid-column:1/3;
+		
+	}
+	.body .computeroutput .circle{
+		border-color: white;
+        border-image: none;
+        border-radius: 50% 50% 50% 50%;
+        border-style: dashed;
+        border-width: 2px;
+		margin-left:35%;
+		margin-top:10px;
+        height: 150px;
+        width: 150px;
+		overflow: hidden;
+		padding-top: 20px;
+		padding-left:20px;
+	}
+	.body .computerscore{
+		grid-column:3/5;
+		text-align:center;
+		color:white;
+		padding-top:80px;
+	}
+	.body .vsleft{
+		grid-column:1/2;
+		
+		
+		}
+	.body .vs{
+		grid-column:2/4;
+		
+		color:white;
+		text-align:center;
+		padding-top:10px;
+		padding-bottom:10px;
+	}
+	.body .vsright{
+		grid-column:4/5;
+		
+	}
+	.body .player{
+		grid-column:1/5;
+		
+	}
+	.body .player h3{
+		text-align:center;
+		padding-top:80px;
+		padding-bottom:80px;
+		color:white;
+	}
+	.body .playeroutput{
+		grid-column:1/3;
+		
+	}
+	.body .playeroutput .circle{
+		border-color: white;
+        border-image: none;
+        border-radius: 50% 50% 50% 50%;
+        border-style: dashed;
+        border-width: 2px;
+		margin-left:35%;
+		margin-top:10px;
+        height: 150px;
+        width: 150px;
+		overflow: hidden;
+		padding-top: 20px;
+		padding-left:20px;
+	}
+	.body .playerscore{
+		grid-column:4/5;
+		text-align:center;
+		color:white;
+		padding-top:80px;
+		
+	}
+	
+	
+footer{
+    display: flex;
+	justify-content: center;
+    background-color: #3333ff;
+	padding-top:20px;
+	padding-bottom:20px;
+}
+.selection:hover{
+	transform:scale(1.2);
+	
+}
+}

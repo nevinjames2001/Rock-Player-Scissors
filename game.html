@@ -1,0 +1,75 @@
+<!--Nevin James,000825144
+This is Assignment 2 of PHP AND JAVSCRIPT of Winter 2021 and it is created and submitted on 8th March 2021
+This is an Assignment is a practical demonstration on Javscript and its eventhandlers-->
+<!--This is the html file for the web page which display's game ROCK,PAPER,SCISSORS.-->
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>TODO supply a title</title>
+    <meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<!--This connects with css file and js file of game.html-->
+    <link rel="stylesheet" href="css/game.css">
+	<script src="js/game.js"></script>
+	<script src="js/Model.js"></script>
+	
+	</script>
+</head>
+
+<body>
+<!--Header of the page which displays the  heading of the page-->
+    <header>
+    <h1>ROCK,PAPER,SCISSORS</h1>
+	</header>
+	<!--Main body part of the game where the score and customer's selection will show up alonng with computers selection-->
+    <div class="body" >
+		<!--This is the div class where the help button and heading is displayed-->
+		<div class="head">
+			<h2>PLAYER VS COMPUTER</h2>
+			<input type="button" id="help" value="Help">
+			<input type="button" value="Back to Form" onclick="history.back()"> 
+		</div>
+		<!--In this class it displays the large text which tells the computer's selection  is on the right side of this cloumn-->
+		<div class="computer"><h3>COMPUTER</h3>
+		</div>
+		<!--In this div class it displays computer's output in a constant circle frame-->
+		<div class="computeroutput"><div class="circle"><div data-final-column-comp></div>
+		</div>
+		</div>
+		<!--In this div class it displays computer's score using span class-->
+        <div class="computerscore">Computer Score:&nbsp;<span class="result-score" data-computer-score>0</span>
+        
+		</div>
+        
+		<div class="vsleft">
+		</div>
+		<!--This div class displays the text VS -->
+		<div class="vs">VS
+		</div>
+		<div class="vsright">
+		</div>
+		<!--This div class displays the name of player it shows the output on the right hand side is players option selection-->
+		<div class="player"><h3>PLAYER</h3>
+		</div>
+		<!--In this div class it displays player's output in a constant circle frame-->
+		<div class="playeroutput"><div class="circle"><div data-final-column-player></div>
+		</div>
+        </div>
+        <!--In this div class it displays player's score using span class-->
+		<div class="playerscore">Player Score:&nbsp;<span class="player-score" data-player-score>0</span></div>
+		
+	</div>
+	<!--This is the footer of the web page which displays the option that we can select -->
+    <footer>
+        <div class="selections">
+		<button class="selection" data-selection="rock"><img src="images/rock.png"></button>
+		<button class="selection" data-selection="paper"><img src="images/paper.png"></button>
+		<button class="selection" data-selection="scissors"><img src="images/scissor.png"></button>
+		</div>
+	</footer>
+
+    
+</body>
+    
+</html>

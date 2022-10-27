@@ -1,0 +1,71 @@
+
+<!--Nevin James,000825144-->
+<!--This is Assignment 2 of PHP AND JAVSCRIPT of Winter 2021 and it is created and submitted on 8th March 2021-->
+<!--This is an Assignment is a practical demonstration on Javscript and its eventhandlers-->
+<!--In this html file we are asking the user to enter few details and submitting it -->
+
+<!DOCTYPE html>
+<html>
+<!--Head of the html file-->
+<head>
+    <title>TODO supply a title</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--Connecting to the CSS file from the html file and javscript file-->
+    <link rel="stylesheet" href="css/form.css">
+    <script src="js/game.js">
+    </script>
+</head>
+
+<body>
+  <!--Declaring a class  and this class contains the whole form-->
+    <div class="container">
+      <!--Destination after clicking submit button-->
+      <form action="game.html">
+        <form id="regform">
+          <!--Declaring each elements of the form-->
+        <div class="row">
+          <div class="col-25">
+            <label for="name">Name</label>
+         
+            <input type="text" id="name" name="name" placeholder="Your name..">
+          </div>
+        </div><br>
+        <div class="row">
+          <div class="col-25">
+            <label for="age">Age</label>
+          
+            <input type="number" id="age" name="age" placeholder="Your age..">
+          </div>
+        </div><br>
+        <div class="row">
+          <div class="col-25">
+            <label for="country">Your Favourite Color</label>
+          
+            <input type="color" id="favcolor" name="favcolor" value="#ff0000"><br><br>
+          </div>
+        </div><br>
+        <div class="row">
+          <div class="col-25">
+            <label for="skill">Your skill Level:</label>
+
+              <select name="skill" id="skill" required>
+                <option value="" selected disabled hidden> Select an Option </option>
+                <option value="Beginner">Beginner</option>
+                <option value="Intermediate">Intermediate</option>
+                <option value="Expert">Expert</option>
+                <option value="Advanced">Advanced</option>
+              </select>
+          </div>
+        </div><br>
+        <!--submit button -->
+        <div class="row">
+          <input type="submit" value="Submit">
+        </div>
+        </form>
+        </form>
+      </div>
+      
+</body>
+
+</html>
